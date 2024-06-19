@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="../formulario/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Practica de Registro de Usuarios</h1>
+        <h2 class="subtitle">REGISTRATE PARA COMENZAR</h2>
+
+        <form action="" method="get">
+            
+            <label for="username">Nombre de usuario : </label>
+            <input type="text" name="username" id="username" 
+            class="input" required pattern="[A-Za-z0-9]{5,15}" maxlength="15"
+            placeholder="Nombre de usuario">
+
+            <label for="pass">Password : </label>
+            <input type="password" class="input" minlength="8"
+            required placeholder="Password" maxlength="20" 
+            name="pass" id="pass">
+
+            <label for="pass2">Confirmar Password : </label>
+            <input type="password" class="input" minlength="8"
+            required placeholder="confirmar Password" maxlength="20"
+            name="pass2" id="pass2">
+
+            <label for="email">Email : </label>
+            <input type="email" name="email" id="email" 
+            class="input" required maxlength="50"
+            placeholder="Email">
+
+            <label for="telefono">Número de Teléfono : </label>
+            <input type="tel" name="telefono" id="telefono" 
+            class="input" required pattern="\+\d{1,13}" maxlength="13"
+            placeholder="+XXXXXXXXXXXX">
+
+            <label for="fecha_nacimiento">Fecha de Nacimiento : </label>
+            <input type="date" name="fecha_nacimiento" id="fecha_nacimiento" 
+            class="input" required placeholder="YYYY-MM-DD">
+
+            <label for="codigo_postal">Código Postal : </label>
+            <input type="text" name="codigo_postal" id="codigo_postal" 
+            class="input" required pattern="\d{5}" maxlength="5"
+            placeholder="Código Postal">
+            <button type="button">Enviar</button>
+
+        </form>
+        <script src="../formulario/codigo.js"></script>
+    </div>
+    
+</body>
+</html>
